@@ -1,0 +1,29 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            function Vulnerability(description, cveid){
+            this.description = description;
+            this.cveid = cveid;
+
+            this.alertVulnerabilityDetails = function(){
+                alert(this.description +" : " + this.cveid);
+            }
+            }
+            var vln = new Vulnerability("SSL certificate cannot be truusted", 1234);
+            // vln.alertVulnerabilityDetails();
+            // vln.description = "SSL certificate cannot be ttrusted"
+            // vln.cveid = 1234;
+            // alert(vln.description);
+            // alert(vln.cveid);
+
+            // for (prop in vln){
+            //     alert(prop + ' : '+vln[prop]);
+                // }
+            // alert(Object.keys(vln));
+            alert(Object.getOwnPropertyNames(vln));
+        </script>
+    </body>
+</html>
