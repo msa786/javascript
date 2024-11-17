@@ -1,0 +1,22 @@
+<html>
+    <head>
+        To demonstrate exception handling in javascript
+    </head>
+    <body>
+
+        <!-- make sure to run this file on http server to get the cookies -->
+        <script> 
+            try{
+                // doesnotexist();
+                throw new Error("This is a custom exceptions");
+                 
+            } catch (err)
+            {
+                document.writeln("</br> error was :"+ err.message);
+            } finally{
+                document.writeln("</br> runs regardless of error or not")
+
+            }
+        </script>
+    </body>
+</html>
